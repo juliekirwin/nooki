@@ -11,6 +11,10 @@ function Echo_Questions()
 	$con = mysql_connect($server,$username,$pass);
 	mysql_select_db($db,$con);
 	$result = mysql_query("SELECT question, username, time_posted FROM question");
+	
+	if($result === FALSE) {
+    die(mysql_error()); 
+}
 	while($row = mysql_fetch_array($result))
 	{
 		echo '<div>';
@@ -36,6 +40,10 @@ function fetch_account()
 	
 	
 	$result = mysql_query("SELECT username, password, image_url FROM account");
+	
+	if($result === FALSE) {
+    die(mysql_error()); 
+}
 	
 	while($row = mysql_fetch_array($result))
 	{	

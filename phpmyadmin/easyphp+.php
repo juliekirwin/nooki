@@ -27,22 +27,22 @@ $module_info = array(
 		"Application"	=>	array(
 				"Name"		=>	"PhpMyAdmin",
 				"Version"	=>	$module_version,
-				"Installation date"	=>	"2013-07-24 20:18:18",
+				"Installation date"	=>	"2013-07-25 20:18:47",
 				"Website"	=>	"<a href='http://www.phpmyadmin.net/' target='_blank'>www.phpmyadmin.net</a>"
 		),
 		"How to uninstall this module ?"	=>	array(
-				"If you want to uninstall this module, you just have to<br />delete the folder"	=>	"<br />[modules folder]\\phpmyadmin3581x130724201818",
+				"If you want to uninstall this module, you just have to<br />delete the folder"	=>	"<br />[modules folder]\\phpmyadmin3581x130725201847",
 		),	
 	),
 	"fr"	=>	array(
 		"Application"	=>	array(
 				"Nom"		=>	"PhpMyAdmin",
 				"Version"	=>	$module_version,
-				"Date d'installation"	=>	"2013-07-24 20:18:18",
+				"Date d'installation"	=>	"2013-07-25 20:18:47",
 				"Site web"	=>	"<a href='http://www.phpmyadmin.net/' target='_blank'>www.phpmyadmin.net</a>"
 		),
 		"Comment d&eacute;sinstaller ce module ?"	=>	array(
-				"Si vous voulez d&eacute;sinstaller ce module, il suffit de supprimer le r&eacute;pertoire"	=>	"<br />[modules folder]\\phpmyadmin3581x130724201818",
+				"Si vous voulez d&eacute;sinstaller ce module, il suffit de supprimer le r&eacute;pertoire"	=>	"<br />[modules folder]\\phpmyadmin3581x130725201847",
 		),
 	),	
 );

@@ -4,7 +4,7 @@
 
 function Echo_Header()
 {
-		echo '<img src="../images/logo.png"></img>';
+		echo '<img src="images/logo.png"></img>';
 		echo '<p>nooki</p>';
 		
 }
