@@ -8,7 +8,7 @@ function Echo_Questions()
 	static $db = "nooki";
 	
 	$con = mysqli_connect($server,$username,$pass,$db);
-	$result = mysqli_query($con,"SELECT question, username, time_posted FROM question ORDER BY time_posted DESC;");
+	$result = mysqli_query($con,"SELECT question, username, time_posted,url FROM question ORDER BY time_posted DESC;");
 	
 	if($result === FALSE) {
     die(mysqli_error()); 
@@ -18,10 +18,11 @@ function Echo_Questions()
 	{
 		echo '<div>';
 		echo '<h2>'.$row{'username'}.'</h2>';
-		echo '<p>'.$row{'question'}.'</p>';
+		echo '<p><a href="'.$row{"url"}.'">'.$row{'question'}.'</a></p>';
 		echo '<br />'.$row{'time_posted'}.'<br />';
 		echo '</div>';
-		echo '<input type="submit" id="submit" value="Answer" class="submitbutton" /><br />';
+		echo '<form method="post" name="answer" action="answerQuestion">';
+		echo '<input type="button" id="submit" value="Answer" class="submitbutton" /><br /></form>';
 		echo "-------------------------------------------------------------------------------------------";
 	}
 	mysqli_close($con);
