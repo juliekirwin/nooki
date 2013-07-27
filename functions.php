@@ -8,14 +8,14 @@ function Echo_Questions()
 	static $pass = "";
 	static $db = "nooki";
 	
-	$con = mysql_connect($server,$username,$pass);
-	mysql_select_db($db,$con);
-	$result = mysql_query("SELECT question, username, time_posted FROM question");
+	$con = mysqli_connect($server,$username,$pass,$db);
+	$result = mysqli_query($con,"SELECT question, username, time_posted FROM question");
 	
 	if($result === FALSE) {
-    die(mysql_error()); 
-}
-	while($row = mysql_fetch_array($result))
+    die(mysqli_error()); 
+	}
+	
+	while($row = mysqli_fetch_array($result))
 	{
 		echo '<div>';
 		echo '<h2>'.$row{'username'}.'</h2>';
@@ -25,7 +25,7 @@ function Echo_Questions()
 		echo '<input type="submit" id="submit" value="Answer" class="submitbutton" /><br />';
 		echo "-------------------------------------------------------------------------------------------";
 	}
-	
+	mysqli_close($con);
 }
 
 function fetch_account()
@@ -35,24 +35,22 @@ function fetch_account()
 	static $pass = "";
 	static $db = "nooki";
 
-	$con = mysql_connect($server,$username,$pass);
-	mysql_select_db($db,$con);
+	$con = mysqli_connect($server,$username,$pass,$db);
 	
-	
-	$result = mysql_query("SELECT username, password, image_url FROM account");
+	$result = mysqli_query($con,"SELECT username, password, image_url FROM account");
 	
 	if($result === FALSE) {
     die(mysql_error()); 
 }
 	
-	while($row = mysql_fetch_array($result))
+	while($row = mysqli_fetch_array($result))
 	{	
 		echo '<img src="'.$row{'image_url'}.'"width=50 height=50></img>';
 		echo '<h1>'.$row{'username'}.'</h1>';
 	}
 	echo '<p>Welcome back.</p>';
 		
-	mysql_close($con);
+	mysqli_close($con);
 }
 
 ?>
