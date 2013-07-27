@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 27, 2013 at 07:19 PM
+-- Generation Time: Jul 27, 2013 at 08:53 PM
 -- Server version: 5.6.12-log
 -- PHP Version: 5.5.0
 
@@ -19,25 +19,6 @@ SET time_zone = "+00:00";
 --
 -- Database: `nooki`
 --
-
--- --------------------------------------------------------
-
---
--- Table structure for table `account`
---
-
-CREATE TABLE IF NOT EXISTS `account` (
-  `username` varchar(20) NOT NULL,
-  `image_url` text NOT NULL,
-  `password` varchar(20) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `account`
---
-
-INSERT INTO `account` (`username`, `image_url`, `password`) VALUES
-('nolan', 'images/account.JPG', 'admin');
 
 -- --------------------------------------------------------
 

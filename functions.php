@@ -33,11 +33,11 @@ function fetch_account()
 	static $server = "localhost";
 	static $username = "root";
 	static $pass = "";
-	static $db = "nooki";
+	static $db = "usercake";
 
 	$con = mysqli_connect($server,$username,$pass,$db);
 	
-	$result = mysqli_query($con,"SELECT username, password, image_url FROM account");
+	$result = mysqli_query($con,"SELECT display_name, image FROM uc_users");
 	
 	if($result === FALSE) {
     die(mysql_error()); 
@@ -45,11 +45,11 @@ function fetch_account()
 	
 	while($row = mysqli_fetch_array($result))
 	{	
-		echo '<img src="'.$row{'image_url'}.'"width=50 height=50></img>';
-		echo '<h1>'.$row{'username'}.'</h1>';
+		echo '<img src="'.$row{'image'}.'"width=50 height=50></img>';
+		echo '<h1>'.$row{'display_name'}.'</h1>';
 	}
 	echo '<p>Welcome back.</p>';
-		
+	echo '<a href="user/login.php">Login</a>';
 	mysqli_close($con);
 }
 
