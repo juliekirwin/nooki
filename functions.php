@@ -8,7 +8,7 @@ function Echo_Questions()
 	static $db = "nooki";
 	
 	$con = mysqli_connect($server,$username,$pass,$db);
-	$result = mysqli_query($con,"SELECT question, username, time_posted FROM question");
+	$result = mysqli_query($con,"SELECT question, username, time_posted FROM question ORDER BY time_posted DESC;");
 	
 	if($result === FALSE) {
     die(mysqli_error()); 

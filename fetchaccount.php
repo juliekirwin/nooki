@@ -4,11 +4,12 @@
 
 	require_once("user/models/config.php");
 	if (!securePage($_SERVER['PHP_SELF'])){die();}
-	
-	static $server = "localhost";
-	static $username = "root";
-	static $pass = "";
-	static $db = "usercake";
+if(isUserLoggedIn())
+{
+	$server = "localhost";
+	$username = "root";
+	$pass = "";
+	$db = "usercake";
 	
 	$con = mysqli_connect($server,$username,$pass,$db);
 	
@@ -23,7 +24,15 @@
 		echo '<img src="'.$row{'image'}.'"width=50 height=50></img>';
 		echo '<h1>'.$loggedInUser->displayname.'</h1>';
 	}
-	echo '<p>Welcome back.<br /><a href="user/login.php">Login</a></p>';
+	echo '<p>Welcome back.<br /><a href="user/logout.php">Logout</a></p>';
 	mysqli_close($con);
+}
+else
+{
+	echo '<img src="images/logo.png "width=50 height=50></img>';
+		echo '<h1>Guest</h1>';
+	echo '<p>Welcome.<br /><a href="user/login.php">Login</a></p>';
+}
+
 
 ?>

@@ -1,4 +1,5 @@
-
+<?php require_once("user/models/config.php");
+if (!securePage($_SERVER['PHP_SELF'])){die();} ?>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -14,11 +15,11 @@
 		
 	<div class="container">
 		<div class="accountcontainer">
-		<?php REQUIRE 'fetchaccount.php' ?>
-		<?php ?>
+		<?php REQUIRE 'fetchaccount.php'; 
+			  REQUIRE 'questionform.php';?>
 		</div>
 		<div class="content">
-			<h1>Top Questions</h1>
+			<h1>Most Recent Questions</h1>
 			<?php Echo_Questions(); ?>
 		</div>
 

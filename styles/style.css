@@ -13,5 +13,5 @@ html, body {width:100%; background:#b2f2ec;	max-width: 1200px;min-width:300px;ma
 .accountcontainer h1{float:right;font-size:25px;position:relative;margin: 0 .5em 0 0;}
 .accountcontainer p{float:right;font-size:13px;position:relative;margin: 0 .5em 0 0;}
 .container{min-height:100%;margin-bottom: -3em;position:relative;}
-
+.accountcontainer form{margin-left:1em;}
 /* Account page */

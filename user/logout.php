@@ -27,7 +27,7 @@ if(!empty($websiteUrl))
 }
 else
 {
-	header("Location: http://".$_SERVER['HTTP_HOST']);
+	header("Location: http://".$_SERVER['HTTP_HOST']."/projects/nooki/index.php");
 	die();
 }	
 
