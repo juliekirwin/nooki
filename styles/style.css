@@ -1,112 +1,17 @@
-html, body
-{
-	width:100%;
-	background:#b2f2ec;	
-	max-width: 1200px;
-	min-width:300px;
-	margin: 0 auto;
-}
-.banner
-{
-	width:100%;
-	margin: 0 auto;
-	background:#565a5d;
-	text-align: center;
-	height:auto;
-	max-height:3em;
-	font-size:25px;
-	color:#40e0d1;
-	box-shadow: 1px 10px 20px rgba(0,0,0,1);
-}
-.banner img
-{
-	float:left;
-	width:30px;
-	height:30px;
-}
-.clearfooter
-{
-	height:3em;
-	clear:both;
-}
-.footer
-{
-	width:100%;
-	background:#565a5d;
-	padding:0 0 .05em 0;
-	height:auto;
-	max-height:3em;
-	position:relative;
-	box-shadow: 1px -10px 20px rgba(0,0,0,1);
-}
-.content
-{
-	width:75%;
-	background:#ffffff;
-	margin: 0 auto;
-	height:auto;
-	font-style:italic;
-	position:relative;
-	float:left;
-	box-shadow: 4px 4px 4px 4px #FFFFFF;
-	border-radius: 5px;
-}
-.content h1
-{
-	font-size:50px;
-	font-style:normal;
-	
-}
-.content div h2
-{
-	font-size:25;
-	font-style:normal;
-}
-.content div p
-{
-	font-size:15;
-	font-style:normal;
-}
-.content input
-{
-	font-size:15;
-	font-style:normal;
-}
-.content input[type=button]:hover {
-    /*background-color:rgba(255,204,0,0.8);*/
-}
-#accountcontainer
-{
-	width:10em;
-	height:10em;
-	float:left;
-	background:#ffffff;
-	margin: 0 1em 1em 1em;
-	box-shadow: 4px 4px 4px 4px #FFFFFF;
-	border-radius: 5px;
-}
-#accountcontainer img
-{
-	margin: .5em 0 0 .5em;
-	border-radius: 10px;
-}
-#accountcontainer h1
-{
-	float:right;
-	font-size:25px;
-	position:relative;
-	margin: 0 .5em 0 0;
-}
-#accountcontainer p
-{
-	float:right;
-	font-size:13px;
-	position:relative;
-	margin: 0 .5em 0 0;
-}
-#container
-{
-	min-height:100%;
-	margin-bottom: -3em;
-	position:relative;
-}
+html, body {width:100%; background:#b2f2ec;	max-width: 1200px;min-width:300px;margin: 0 auto;}
+.banner{width:100%;margin: 0 auto;background:#565a5d;text-align: center;height:auto;max-height:3em;font-size:25px;color:#40e0d1;box-shadow: 1px 10px 20px rgba(0,0,0,1);}
+.banner img{float:left;width:30px;height:30px;}
+.clearfooter{height:3em;clear:both;}
+.footer{width:100%;background:#565a5d;padding:0 0 .05em 0;height:auto;max-height:3em;position:relative;box-shadow: 1px -10px 20px rgba(0,0,0,1);}
+.content{width:75%;background:#ffffff;margin: 0 auto;height:auto;font-style:italic;position:relative;float:left;box-shadow: 4px 4px 4px 4px #FFFFFF;border-radius: 5px;}
+.content h1{font-size:50px;font-style:normal;}
+.content h2{font-size:25;font-style:normal;}
+.content p{font-size:15;font-style:normal;}
+.content input{font-size:15;font-style:normal;}
+.accountcontainer{width:10em; max-height:auto;min-height:10em;float:left;background:#ffffff;margin: 0 1em 1em 1em;box-shadow: 4px 4px 4px 4px #FFFFFF;border-radius: 5px;}
+.accountcontainer img{margin: .5em 0 0 .5em;border-radius: 10px;}
+.accountcontainer h1{float:right;font-size:25px;position:relative;margin: 0 .5em 0 0;}
+.accountcontainer p{float:right;font-size:13px;position:relative;margin: 0 .5em 0 0;}
+.container{min-height:100%;margin-bottom: -3em;position:relative;}
+
+/* Account page */

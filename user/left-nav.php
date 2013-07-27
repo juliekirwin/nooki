@@ -1,3 +1,4 @@
+<div class="accountcontainer">
 <?php
 /*
 UserCake Version: 2.0.2
@@ -10,6 +11,7 @@ if (!securePage($_SERVER['PHP_SELF'])){die();}
 if(isUserLoggedIn()) {
 	echo "
 	<ul>
+	<li><a href='../index.php'>Home</a></li>
 	<li><a href='account.php'>Account Home</a></li>
 	<li><a href='user_settings.php'>User Settings</a></li>
 	<li><a href='logout.php'>Logout</a></li>
@@ -42,3 +44,4 @@ else {
 }
 
 ?>
+</div>

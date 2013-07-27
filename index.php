@@ -11,8 +11,8 @@
 			<?php Echo_Header(); ?>	
 		</div>
 		
-	<div id="container">
-		<div id="accountcontainer">
+	<div class="container">
+		<div class="accountcontainer">
 		<?php fetch_account() ?>
 		</div>
 		<div class="content">
